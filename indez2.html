@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Perez</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    
+    
+
+    <!-- Header -->
+    <header>
+        <div class="logo">My<span>Portfolio</span></div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span>Ivan</span></h1>
+            <p>I’m a passionate developer skilled in front-end and back-end development, and I love creating beautiful, Web and Mobile applications.</p>
+            <button class="port-button">Download Resume</button>
+        </div>
+        <div class="hero-image">
+            <img src="/images/profile.png" alt="Your Profile Image">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-cards">
+            <div class="card">
+                <h3>HTML & CSS</h3>
+            </div>
+            <div class="card">
+                <h3>JAVASCRIPT</h3>
+            </div>
+            <div class="card">
+                <h3>SQL & FIREBASE</h3>
+            </div>
+            <div class="card">
+                <h3>JAVA,ANDROID STUDIO</h3>
+            </div>
+            <div class="card">
+                <h3>PYTHON, FLASK, TKINTER</h3>
+            </div>
+            <div class="card">
+                <h3>PHP</h3>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project-cards">
+            <a href="https://animus-pi.vercel.app/" target="_blank" class="card" style="text-decoration:none">
+                <img src="images/project1.png" alt="Vet Appointment Mobile and Web Project">
+                <h3>Animus Vet</h3>
+                <p>FIREBASE</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JS</p>
+                <p>JAVA</p>
+            </a>
+            
+            <a href="https://onlinescreenrecorder.onrender.com/" target="_blank" class="card" style="text-decoration:none">
+                <img src="images/project2.png" alt="URL Shortener">
+                <h3>Windows/Mac Online Screen Recorder</h3>
+                <p>FLASK</p>
+                <p>HTML</p>
+                <p>CSS</p>
+            </a>
+            
+            <a href="https://url-shortener-7e2j.vercel.app/" target="_blank" class="card" style="text-decoration:none">
+                <img src="images/project3.png" alt="Project 3">
+                <h3>URL SHORTENER</h3>
+                <p>FLASK</p>
+                <p>HTML</p>
+                <p>CSS</p>
+            </a>
+            
+            <a href="https://restonard.vercel.app/" target="_blank" class="card" style="text-decoration:none">
+                <img src="images/project4.png" alt="Restaurant">
+                <h3>Restaurant</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JS</p>
+            </a>
+            
+            <a href="https://hesofx.vercel.app" target="_blank" class="card" style="text-decoration:none">
+                <img src="images/project5.png" alt="Trading Journal Calendar - Trade SnapShot">
+                <h3>Trading Journal Calendar - Trade Snapshot</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JS</p>
+                <p>Firebase</p>
+            </a>
+            
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me at <a href="mailto:your.email@example.com">clichemen@gmail.com</a></p>
+    </section>
+    <script>
+        // Initialize ScrollReveal
+        ScrollReveal().reveal('.hero-text', {
+            duration: 1000,
+            origin: 'left',
+            distance: '50px',
+        });
+    
+        ScrollReveal().reveal('.hero-image', {
+            duration: 1000,
+            origin: 'right',
+            distance: '50px',
+            delay: 200,
+        });
+    
+        ScrollReveal().reveal('.skills h2, .portfolio h2, .contact h2', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '20px',
+        });
+    
+        ScrollReveal().reveal('.skill-cards .card, .project-cards .card', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '50px',
+            interval: 200,
+        });
+    
+        ScrollReveal().reveal('.contact p', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '20px',
+            delay: 200,
+        });
+    </script>
+</body>
+</html>
